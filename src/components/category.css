@@ -1,0 +1,30 @@
+.categorymain {
+  padding-left: 109px;
+  padding-right: 20px;
+}
+
+.categories {
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.mealrow {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 1264px) {
+  .categorymain {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+@media (max-width: 760px) {
+  .categorymain {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}

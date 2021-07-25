@@ -1,0 +1,266 @@
+.emptyBasket {
+  height: 184px;
+  width: 350px;
+  background-color: white;
+  box-sizing: border-box;
+  padding-top: 10px;
+}
+
+.emptyBasket div {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  background-color: #bac3c3;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 5px;
+  height: 50px;
+  width: 330px;
+}
+
+.emptyBasket h2 {
+  color: grey;
+  margin-top: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+
+.emptyBasket :nth-child(2) {
+  text-align: center;
+  align-items: center;
+  color: #a8abab;
+  width: 100%;
+  height: calc(100% - 60p);
+  background-color: white;
+  box-sizing: border-box;
+  padding-top: 45px;
+  font-size: 16px;
+}
+
+.filledBasket {
+  height: auto;
+  width: 350px;
+  background-color: white;
+  box-sizing: border-box;
+}
+
+.filledBasket h2 {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin-left: 10px;
+  margin-right: 10px;
+  background-color: #05cdbd;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  border-radius: 5px;
+  height: 50px;
+  padding-top: 10px;
+  width: 330px;
+  box-sizing: border-box;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.basketbutton {
+  border-radius: 50%;
+  color: #05cdbd;
+  width: 20px;
+  height: 20px;
+  margin-left: 5px;
+  margin-right: 5px;
+  border: #05cdbd 0.5px solid;
+  background-color: white;
+}
+
+.basketCalcul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.basketCalcul :not(:first-child) {
+  margin-bottom: 35px;
+}
+
+.amount,
+.title,
+.price {
+  font-size: 16px;
+}
+
+.subtotal {
+  margin-top: 20px;
+  border-top: solid 0.2px grey;
+  padding-top: 20px;
+  margin-left: 15px;
+  margin-right: 15px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.deliveryfees {
+  padding-top: 20px;
+  margin-left: 15px;
+  margin-right: 15px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.total {
+  padding-top: 20px;
+  margin-left: 15px;
+  margin-right: 15px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 20px;
+}
+
+@media (max-width: 880px) {
+  /* .emptyBasket {
+    width: 40%;
+    border: solid 1px grey;
+    margin-right: 0px;
+    padding-top: 5px;
+  }
+
+  .filledBasket {
+    width: 30%;
+  }
+
+  .emptyBasket div {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background-color: violet;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+    height: 50px;
+
+    width: 330px;
+  }
+
+  .emptyBasket h2 {
+    color: grey;
+    margin-top: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+  }
+
+  .emptyBasket :nth-child(2) {
+    text-align: center;
+    align-items: center;
+    color: #a8abab;
+    width: 100%;
+    height: calc(100% - 60p);
+    background-color: white;
+    box-sizing: border-box;
+    padding-top: 45px;
+    font-size: 16px;
+  }
+
+  .filledBasket {
+    height: auto;
+    width: 350px;
+    background-color: white;
+    box-sizing: border-box;
+  }
+
+  .filledBasket h2 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: #05cdbd;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    border-radius: 5px;
+    height: 50px;
+    padding-top: 10px;
+    width: 330px;
+    box-sizing: border-box;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .basketbutton {
+    border-radius: 50%;
+    color: #05cdbd;
+    width: 20px;
+    height: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border: #05cdbd 0.5px solid;
+    background-color: white;
+  }
+
+  .basketCalcul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .basketCalcul :not(:first-child) {
+    margin-bottom: 35px;
+  }
+
+  .amount,
+  .title,
+  .price {
+    font-size: 16px;
+  }
+
+  .subtotal {
+    margin-top: 20px;
+    border-top: solid 0.2px grey;
+    padding-top: 20px;
+    margin-left: 15px;
+    margin-right: 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .deliveryfees {
+    padding-top: 20px;
+    margin-left: 15px;
+    margin-right: 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .total {
+    padding-top: 20px;
+    margin-left: 15px;
+    margin-right: 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 20px;
+  }
+} */
+}
