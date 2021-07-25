@@ -9,6 +9,11 @@
   box-sizing: border-box;
 }
 
+.partwithbasket {
+  display: flex;
+  flex-direction: row;
+}
+
 .headerpresentation {
   width: 100%;
   background-color: white;
@@ -52,9 +57,7 @@ h3 {
   .partwithbasket {
     display: flex;
     flex-direction: row;
-    /* justify-content: space-between; */
     width: 100%;
-    background-color: yellow;
   }
 
   .headerpresentation {
@@ -87,7 +90,7 @@ h3 {
 @media (max-width: 860px) {
   .partwithbasket {
     width: 100%;
-    background-color: yellow;
+
     display: flex;
     flex-direction: row;
   }

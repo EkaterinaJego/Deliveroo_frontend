@@ -36,7 +36,6 @@
   width: 130px;
   height: 130px;
   border-radius: 5px;
-  /* flex: 1; */
   margin-right: 10px;
   box-sizing: border-box;
 }
@@ -151,9 +150,9 @@
   .mealbox {
     width: 100%;
     flex-direction: column;
-
     justify-content: center;
     align-items: center;
+    margin-right: 7%;
   }
 
   .mealprice {
@@ -165,12 +164,18 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 10px;
+    margin-top: 0px;
+    padding-top: 0px;
     font-size: 15px;
+    width: 100%;
+    height: 60%;
+    box-sizing: border-box;
+  }
+  .mealsecondcolumn {
+    align-items: center;
     width: 100%;
     height: 50%;
   }
-
   .mealbox img {
     align-items: center;
     height: 100%;
@@ -178,20 +183,15 @@
     object-fit: contain;
   }
 
-  .mealsecondcolumn {
-    align-items: center;
-    width: 100%;
-    height: 50%;
-  }
-
   .mealbox h3 {
     font-size: 0.7rem;
     text-align: center;
     font-weight: bold;
+    padding-top: 0px;
   }
 
   .mealdescription {
     text-align: center;
-    height: 7vh;
+    height: 9vh;
   }
 }
